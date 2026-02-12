@@ -49,7 +49,7 @@ Implemented a basic neural network with the following architecture:
 | ReLU (Activation Function) | - |
 | Linear | In = 8, Out = 1 |
 
-**Total Parameters**: Calculated and reported in the notebook.
+**Total Parameters**: Calculated and reported in the script.
 
 ### 3. Training the Simple Network (25 points)
 
@@ -73,7 +73,7 @@ Implemented and calculated the following metrics from scratch:
 - **MSE (Mean Squared Error)**: Average squared difference between predicted and actual values
 - **RMSE (Root Mean Squared Error)**: Square root of MSE, providing error in the same units as the target
 
-**Results**: All metrics and loss curves are reported in the notebook.
+**Results**: All metrics and loss curves are reported in the script output.
 
 ### 4. Complex Neural Network Design (20 points)
 
@@ -81,7 +81,7 @@ Designed and implemented a more complex neural network architecture that achieve
 
 **Performance Goal**: The improved network demonstrates better metrics across all evaluation criteria.
 
-**Total Parameters**: Calculated and reported in the notebook.
+**Total Parameters**: Calculated and reported in the script.
 
 ### 5. Comparison and Analysis (15 points)
 
@@ -116,25 +116,53 @@ Provided detailed conclusions and insights from the comparison.
 
 ## Files in This Repository
 
-- `2ndQuestion.ipynb`: Complete implementation with all tasks
+- `housing_prediction.py`: Complete Python implementation with all tasks
 - `housing.csv`: California Housing Prices dataset
 - `README.md`: This file
 
 ## Technologies Used
 
-- Python
+- Python 3.x
 - NumPy
 - Pandas
 - Matplotlib
-- PyTorch / TensorFlow (for neural network implementation)
+- PyTorch (for neural network implementation)
 - Scikit-learn (for preprocessing only)
+
+## Requirements
+
+```bash
+pip install numpy pandas matplotlib torch scikit-learn
+```
 
 ## How to Run
 
-1. Clone this repository
-2. Install required dependencies
-3. Open `2ndQuestion.ipynb` in Jupyter Notebook or JupyterLab
-4. Run all cells sequentially
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/VictimPickle/AI-Neural-Network-Housing-Prices.git
+   cd AI-Neural-Network-Housing-Prices
+   ```
+
+2. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   Or manually install:
+   ```bash
+   pip install numpy pandas matplotlib torch scikit-learn
+   ```
+
+3. Run the Python script:
+   ```bash
+   python housing_prediction.py
+   ```
+
+4. The script will:
+   - Load and preprocess the data
+   - Train both simple and complex neural networks
+   - Display training progress and metrics
+   - Generate visualization plots
+   - Print comparative analysis
 
 ## Author
 
